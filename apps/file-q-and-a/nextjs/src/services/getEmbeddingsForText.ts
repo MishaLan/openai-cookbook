@@ -3,7 +3,7 @@ import { chunkText } from "./chunkText";
 import { embedding } from "./openai";
 
 // There isn't a good JS tokenizer at the moment, so we are using this approximation of 4 characters per token instead. This might break for some languages.
-const MAX_CHAR_LENGTH = 250 * 4;
+const MAX_CHAR_LENGTH = 256 * 4;
 
 // This function takes a text and returns an array of embeddings for each chunk of the text
 // The text is split into chunks of a given maximum charcter length
